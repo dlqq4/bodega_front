@@ -1,20 +1,22 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FactoryApiService } from '../global-factory-api/factory-api.service';
+import { InventoryModel } from 'src/app/domain/model/i-inventory.model';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class DeleteProductUseCase {
+export class CreateInventoryUseCase {
 
   constructor(private readonly factoryApiService: FactoryApiService) {
 
   }
 
-  
-  deleteProduct(id: string) :Observable<boolean> {
-    return this.factoryApiService.createApiProduct().delete(id);
+  createInventory(inventory : InventoryModel) :Observable<InventoryModel> {
+    return this.factoryApiService.createApiInventory().create(inventory);
   }
+
+
 
 }

@@ -6,15 +6,15 @@ import { FactoryApiService } from '../global-factory-api/factory-api.service';
 @Injectable({
   providedIn: 'root'
 })
-export class DeleteProductUseCase {
+export class DeleteInventoryUseCase {
 
   constructor(private readonly factoryApiService: FactoryApiService) {
 
   }
 
   
-  deleteProduct(id: string) :Observable<boolean> {
-    return this.factoryApiService.createApiProduct().delete(id);
+  deleteInventory(id: string) :Observable<boolean> {
+    return this.factoryApiService.createApiInventory().delete(id);
   }
 
 }

@@ -7,7 +7,6 @@ import { ViewProductComponent } from './view-product/view-product.component';
 
 @NgModule({
   declarations: [
-    //ProductComponent,
     ViewProductComponent
   ],
   imports: [
@@ -16,7 +15,6 @@ import { ViewProductComponent } from './view-product/view-product.component';
     HttpClientModule
   ],
   exports: [
-    //ProductComponent,
     ViewProductComponent
   ]
 })

@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ViewProductComponent } from './view-product/view-product.component';
+import { ViewWareHouseComponent } from './view-warehouse/view-warehouse.component';
 import { HomeComponent } from '../shared/home/home.component';
 
-
 const routes : Routes = [
-    {
-      path: '',
-      children: [
-        {path: 'app-view-product', component : ViewProductComponent},
-        {path: '**', component : HomeComponent}
-      ]
-      
-    }
+  {
+    path: '',
+    children: [
+      {path: 'app-view-warehouse', component : ViewWareHouseComponent},
+      {path: '**', component : HomeComponent}
+    ]
+    
+  }
 ]
-
 
 @NgModule({
   declarations: [],
@@ -26,6 +24,5 @@ const routes : Routes = [
   exports: [
     RouterModule
   ]
-
 })
-export class ProductRoutingModule { }
+export class WarehouseRoutingModule { }
