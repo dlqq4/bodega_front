@@ -1,0 +1,38 @@
+
+.footer {
+    background-color: #1a1a1f;
+    padding: 50px;
+    //position: fixed;  DE ESTA MANERA DEJO EL FOOTER FIJO
+    position: absolute;
+    bottom: 0PX;
+    width: 100%;
+  
+  }
+  
+  .footer div {
+    text-align: center;
+    font-family: Helvetica;
+    color: #f8faf8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+  
+    font-family: Helvetica;
+    margin-left: 20px; 
+  }
+
+  a{
+    color: #fe6047;
+  }
+
+  a :hover {
+    color: #5eaefff2;
+  }
+
+
+  
+ 
+ 
+  

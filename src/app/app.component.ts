@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoginService } from './core/services/login.service';
+
 
 @Component({
   selector: 'app-root',
@@ -8,15 +8,15 @@ import { LoginService } from './core/services/login.service';
 })
 export class AppComponent {
 
-  title = 'bodega_front';
+  title = 'Bodega_Front';
 
-  constructor(public loginService: LoginService) {
+  constructor() {
   }
 
   status: boolean = true;
 
   ngOnInit(): void {
-    this.loginService.statusEmiter.subscribe((data) =>  this.status = data)
+   
   }
 
 }

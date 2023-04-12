@@ -2,22 +2,25 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { environment } from 'src/environments/environment';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import 'firebase/auth';
-import { provideAuth,getAuth } from '@angular/fire/auth';
+import { HttpClientModule } from '@angular/common/http';
+import { GlobalService } from './utils/service/global.service';
+import { SharedModule } from './presentation/shared/shared.module';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent 
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
+    HttpClientModule,
+    SharedModule
+ 
   ],
-  providers: [],
+  providers: [GlobalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

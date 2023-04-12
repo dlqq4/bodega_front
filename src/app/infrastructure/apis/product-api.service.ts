@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ProductModel } from 'src/app/domain/model/i-product.model';
@@ -12,6 +12,14 @@ export class ProductApiService {
   private apiServeUrl = environment.apiBaseUrl; 
 
   constructor(private http: HttpClient) {
+  }
+
+  httpOptions = {
+    headers : new HttpHeaders({
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Methods': 'POST,GET,PUT,DELETE',
+      'Access-Control-Allow-Origin': '*'
+    })
   }
 
   //******************************************************************************************/
