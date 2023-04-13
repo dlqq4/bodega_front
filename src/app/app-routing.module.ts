@@ -7,8 +7,9 @@ const routes: Routes = [
  
   {path: '', redirectTo: 'app-home' , pathMatch: 'full'},
   {path: 'app-home', component: HomeComponent},
-  {path: 'view-product', loadChildren:() => import('./presentation/prooduct-components/product.module').then(m =>m.ProductModule)},
-  {path: 'view-warehouse', loadChildren:() => import('./presentation/warehouse-components/warehouse.module').then(m =>m.WarehouseModule)},
+  {path: 'product', loadChildren:() => import('./presentation/prooduct-components/product.module').then(m =>m.ProductModule)},
+  {path: 'warehouse', loadChildren:() => import('./presentation/warehouse-components/warehouse.module').then(m =>m.WarehouseModule)},
+  {path: 'inventory', loadChildren:() => import('./presentation/inventory-components/inventory.module').then(m =>m.InventoryModule)},
   {path: '**', component: HomeComponent}
 
 ];

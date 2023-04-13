@@ -1,0 +1,19 @@
+
+
+<table>
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>ADDRESS</th>
+        <th>PHONE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of inventorys">
+        <td>{{ i.product._id}}</td>
+        <td>{{ i.warehouse._id }}</td>
+        <td>{{ i.level }}</td>
+        <td>{{ i.quantity }}</td>
+      </tr>
+    </tbody>
+</table>

@@ -18,8 +18,6 @@ export class ViewProductComponent implements OnInit {
 
   constructor(
     private getProductUseCase: GetProductUseCase,
-    private auth : Auth,
-    private formBuilder : FormBuilder,
     public routes : Router
     ) { }
 
@@ -27,11 +25,6 @@ export class ViewProductComponent implements OnInit {
     this.getProduct();
   }
 
-
-  signInForm = this.formBuilder.group({
-    username: new FormControl('', Validators.required),
-    password: new FormControl ('', Validators.required)
-  });
 
   public getProduct(): void {
     this.getProductUseCase.getAllproduct().subscribe({
@@ -41,19 +34,7 @@ export class ViewProductComponent implements OnInit {
       })
   }
 
-  /*
-
-  loginWithGoogle(){
-    return signInWithPopup(this.auth, new GoogleAuthProvider);
-  }
-
-  async onClickLogin() {
-    const userCredential = await this.loginWithGoogle();
-    const token = await userCredential.user?.getIdToken();
-    localStorage.setItem('token', token);
-    console.log(token);
-  }
-  */
+  
 
 
 }

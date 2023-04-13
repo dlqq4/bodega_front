@@ -1,20 +1,16 @@
 
-<table>
-    <thead>
-      <tr>
-        <th>BRAND</th>
-        <th>DESCRIPTION</th>
-        <th>PHOTO</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let product of products">
-        <td>{{ product.brand }}</td>
-        <td>{{ product.description }}</td>
-        <td>{{ product.photo }}</td>
-      </tr>
-    </tbody>
-</table>
+
+<div class="card-container">
+  <div class="card" *ngFor="let product of products">
+    <img class="product-image" [src]="product.photo" alt="{{ product.brand}}" />
+    <div class="product-info">
+      <P class="product-name">BRAND: {{ product.brand }}</P>
+      <p class="product-price">DESCRIPTION: {{ product.description }}</p>
+      <p class="product-price">ID: {{ product._id }}</p>
+     
+    </div>
+  </div>
+</div>
 
 
 

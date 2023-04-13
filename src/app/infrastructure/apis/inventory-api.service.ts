@@ -21,7 +21,7 @@ export class InventoryApiService {
   }
 
   public getById(id : string): Observable<InventoryModel> {
-    return this.http.get<InventoryModel> (this.apiServeUrl+"/Inventory/find-by-id/"+id)
+    return this.http.get<InventoryModel> (this.apiServeUrl+"/inventory/find-by-id/"+id)
   }
   
   public update(id: string, Inventory: InventoryModel): Observable<InventoryModel> {
