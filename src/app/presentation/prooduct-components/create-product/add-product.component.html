@@ -1,6 +1,5 @@
 
 
-
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <br>
 <br>
@@ -10,7 +9,7 @@
         <div class="card-group mb-0">
           <div class="card p-4">
 
-            <form [formGroup]="inventoryForm" (ngSubmit)="createInventory()">
+            <form [formGroup]="productForm" (ngSubmit)="createProduct()">
 
             <div class="card-body"    >
               <h1>New Product</h1>
@@ -18,22 +17,19 @@
               
               
               <div class="input-group mb-3">                    
-               
-                <select type="text" placeholder="select to product" formControlName="product" >
-                    <option *ngFor="let i of products" value="{{i._id}}"> {{i.description}}</option>
-                </select>
+                <input type="text" class="form-control" placeholder="Brand" formControlName="brand">
               </div>
 
-              <div class="input-group mb-3"> 
-                <select type="text" placeholder="select warehouse" formControlName="warehouse" >
-                    <option *ngFor="let i of warehouses" value="{{i._id}}"> {{i.address}}</option>
-                </select>
+              <div class="input-group mb-3">                    
+                <input type="text" class="form-control" placeholder="Description" formControlName="description">
+              </div>
+              <div class="input-group mb-4">                     
+                <input  class="form-control" placeholder="Penelope" formControlName="price" >
               </div>  
               
               <div class="input-group mb-3">                    
-                <input type="text" class="form-control" placeholder="Quantity" formControlName="quantity">
+                <input type="text" class="form-control" placeholder="Photo" formControlName="photo">
               </div>
-
                 <button type="submit" class="btn btn-primary px-4"  (click)="true" >ADD</button>                         
             </div>
             </form>
@@ -52,11 +48,3 @@
       </div>
     </div>
   </div>
-
-<!--
-
-              <select #documentsTypes type="text" name="documentType" id="documentType" formControlName="documentType" (change)="switchDocumentType(+documentsTypes.value)" class="mt-2 p-2 border border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300 rounded text-sm text-gray-900">
-                <option *ngFor="let option of documentTypes" value="{{option.value}}">{{option.name}}</option>
-              </select>
-
--->

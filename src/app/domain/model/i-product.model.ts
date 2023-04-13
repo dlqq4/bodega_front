@@ -1,7 +1,7 @@
 
 export interface ProductModel {
 
-    _id : string;
+    _id? : string;
     brand : string;
     description: string;
     price: number;

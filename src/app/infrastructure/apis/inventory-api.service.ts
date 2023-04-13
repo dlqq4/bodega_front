@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { InventoryDTO } from 'src/app/domain/commands/inventory.dto';
 import { InventoryModel } from 'src/app/domain/model/i-inventory.model';
 import { environment } from 'src/environments/environment';
 
@@ -28,12 +29,12 @@ export class InventoryApiService {
       return this.http.put<InventoryModel>(this.apiServeUrl+"/inventory/update-inventory/"+id, Inventory)
   }
 
-  public create(Inventory : InventoryModel ): Observable<InventoryModel> {
+  public create(Inventory : InventoryDTO ): Observable<InventoryModel> {
     return this.http.post<InventoryModel>(this.apiServeUrl +"/inventory/create-inventory", Inventory);
   }
 
-  public delete(id : string): Observable<boolean> {
-    return this.http.delete<boolean> (this.apiServeUrl+"/inventory/delete-inventory/"+id)
+  public delete(_id : string): Observable<boolean> {
+    return this.http.post<boolean> (this.apiServeUrl+"/inventory/delete-inventory/",{_id})
   }
 
 }

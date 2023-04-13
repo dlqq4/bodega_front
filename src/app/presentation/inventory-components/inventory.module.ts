@@ -1,20 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ViewInventoryComponent } from './view-inventory/view-inventory.component';
-import { ProductRoutingModule } from '../prooduct-components/product-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { InventoryRoutingModule } from './inventory-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AddInventoryComponent } from './add-inventory/add-inventory.component';
 
 
 
 @NgModule({
   declarations: [
-    ViewInventoryComponent
+    ViewInventoryComponent,
+    AddInventoryComponent
   ],
   imports: [
     CommonModule,
     InventoryRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   exports: [
     ViewInventoryComponent

@@ -1,5 +1,6 @@
 import { Observable } from "rxjs";
 import { InventoryModel } from "../model/i-inventory.model";
+import { InventoryDTO } from "../commands/inventory.dto";
 
 
 export abstract class InventoryGateway {
@@ -8,7 +9,7 @@ export abstract class InventoryGateway {
 
     abstract getAll() : Observable<InventoryModel[]>;
 
-    abstract create(product : InventoryModel) : Observable<InventoryModel>;
+    abstract create(product : InventoryDTO) : Observable<InventoryModel>;
 
     abstract delete(id: string) : Observable<boolean>;
 

@@ -4,17 +4,21 @@ import { ProductRoutingModule } from './product-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
+import { AddProductComponent } from './create-product/add-product.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     ViewProductComponent,
-    UpdateProductComponent
+    UpdateProductComponent,
+    AddProductComponent
   ],
   imports: [
     CommonModule,
     ProductRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   exports: [
     ViewProductComponent
