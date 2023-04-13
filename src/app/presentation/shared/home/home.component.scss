@@ -2,7 +2,7 @@
 
 .home {
     width: 100%;
-    height: 130vh;
+    height: 110vh;
     background-image: url("https://images.unsplash.com/photo-1435575653489-b0873ec954e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@
   
   .cover{
     width: 100%;
-    height: 130vh;
+    height: 110vh;
     background-color: rgba(0, 0, 0, 0.36); //DE ESTA MANERA LA OPACIDAD SOLO SE LE HACE A ESTE ELEMENTO Y NO A LO QUE ESTA DENTRO DE EL
     display: flex;
     align-items: center;
@@ -20,51 +20,4 @@
   }
   
 
-  .content {
-    text-align: center;
-    font-size: 18px;
-    color: rgba(234, 234, 234, 0.9);
-    font-family: Helvetica;
-  }
   
-  .content h1{
-    font-size: 66px;
-  }
-  
-  .btn-home1{
-    width: 240px;
-    height: 48px;
-    background-color: #212127;
-    color: white;
-    font-size: 17px;
-    text-transform: uppercase;
-    margin: 24px;
-    border: none;
-  }
-  
-  .btn-home1:hover{
-    //#5900cdf2
-    background-color:  #fe6047;;
-    color: rgb(248, 250, 248);
-  
-  }
-  
-  .btn-home2{
-    width: 240px;
-    height: 48px;
-    font-size: 17px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: #f8faf8;
-    text-transform: uppercase;
-    margin: 24px;
-  }
-  
-  .btn-home2:hover{
-    //#c4fa00f2
-    border: 2px solid #fe6047;
-    color: rgb(248, 250, 248);
-  }
-  
-
-  // https://images.unsplash.com/photo-1435575653489-b0873ec954e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
