@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SignInUseCase } from './infrastructure/usecase/sign-in.use-case';
 
 
 @Component({
@@ -10,13 +11,15 @@ export class AppComponent {
 
   title = 'Bodega_Front';
 
-  constructor() {
+  constructor(private signInUseCase : SignInUseCase) {
   }
 
   status: boolean = true;
 
+
   ngOnInit(): void {
-   
+    this.signInUseCase.statusEmiter.subscribe((data) =>  this.status = data)
   }
+
 
 }

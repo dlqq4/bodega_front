@@ -1,18 +1,20 @@
 import { Injectable } from '@angular/core';
 
+
+
 @Injectable({
   providedIn: 'root'
 })
-export class GlobalService {
+export class SwitchUseCase {
 
-  constructor() { }
+  constructor() {
+  }
 
   public valorCaseUser : number = 0;
   public switchViewUser : boolean = true;
   public switchUserUpdate : boolean = false;
 
 
-  
   //*********************CONTROL DE COMPONENTES USER*************************/
 
   eligeViewUser(){
@@ -59,7 +61,4 @@ export class GlobalService {
     }
   }
 
-
 }
-
-  

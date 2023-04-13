@@ -1,0 +1,22 @@
+
+
+  <section class="form-register">
+    <h4>Sign In</h4>
+    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      
+      <input class="controls" formControlName="email" type="email"  placeholder="e-mail">
+      <input class="controls" formControlName="password" type="password"  placeholder="Contraseña">
+  
+      <button class="boton" type="submit"  (click)="true"  >Sign In</button>
+  
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  
+      <div class="google-btn">
+        <div class="google-icon-wrapper">
+          <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+        </div>
+        <p class="btn-text" (click)="onClickLogin()"><b> Sign Up with google</b></p>
+      </div>
+  
+    </form>
+  </section>

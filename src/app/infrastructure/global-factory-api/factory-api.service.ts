@@ -6,13 +6,14 @@ import { InventoryGateway } from 'src/app/domain/gateway/inventory.gateway';
 import { WareHouseGateway } from 'src/app/domain/gateway/warehouse.gateway';
 import { WareHouseApiService } from '../apis/warehouse-api.service';
 import { InventoryApiService } from '../apis/inventory-api.service';
+import { Auth } from '@angular/fire/auth';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FactoryApiService {
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private auth : Auth) {
   }
 
   createApiProduct(): ProductGateway {
@@ -27,5 +28,6 @@ export class FactoryApiService {
     return new WareHouseApiService(this.http);
   }
 
+ 
 
 }
