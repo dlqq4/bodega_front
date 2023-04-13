@@ -1,13 +1,13 @@
 
 
-  <section class="form-register">
+  <section class="form-register" *ngIf="(switchUseCase.switchLogIn)">
     <h4>Sign In</h4>
     <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
       
       <input class="controls" formControlName="email" type="email"  placeholder="e-mail">
       <input class="controls" formControlName="password" type="password"  placeholder="Contraseña">
   
-      <button class="boton" type="submit"  (click)="true"  >Sign In</button>
+      <button class="boton" type="submit"  >Sign In</button>
   
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   
@@ -20,3 +20,15 @@
   
     </form>
   </section>
+
+
+
+      <div class="content" *ngIf="(switchUseCase.switchPresentation)"> <!-- ESTE ES EL CONTENIDO DE MI HOME -->
+        <h1>Warehouse BF</h1>
+        <p>Welcome to Warehouse management!<br>what do you want to do?</p>
+        <div>
+          <button class="btn-home1" [routerLink]="['/app-vista-agregar-naves']" >AGREGAR</button>
+          <button class="btn-home2" >VER</button>
+        </div>
+      </div>
+ 

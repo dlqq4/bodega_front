@@ -40,25 +40,8 @@ export class SwitchUseCase {
 
   public valorCaseLogin : number = 0;
   public switchLogIn : boolean = true;
-  public switchLogUp : boolean = false;
-
-  eligeLogin(){
-
-    switch (this.valorCaseLogin){
-
-      case 1 :
-        this.switchLogIn = true;
-        this.switchLogUp = false;
-        console.log("LogIn :" + this.switchLogIn);
-        break;
-
-      case 2 :
-        this.switchLogUp = true;
-        this.switchLogIn = false;
-        console.log("LogUp :" + this.switchLogUp);
-        break;
-
-    }
-  }
+  public switchPresentation : boolean = false;
+ 
+ 
 
 }

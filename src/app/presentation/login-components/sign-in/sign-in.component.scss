@@ -230,4 +230,54 @@ margin-bottom: 10PX;
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
 
+
+
+
+
+
+
+
+.content {
+  text-align: center;
+  font-size: 19px;
+  color: rgba(234, 234, 234, 0.9);
+  font-family: Helvetica;
+}
+
+.content h1{
+  font-size: 64px;
+}
+
+.btn-home1{
+  width: 240px;
+  height: 48px;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 24px;
+  border: none;
+}
+
+.btn-home1:hover{
+  background-color: #eeae20;
+  color: rgb(248, 250, 248);
+
+}
+
+.btn-home2{
+  width: 240px;
+  height: 48px;
+  font-size: 17px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #f8faf8;
+  text-transform: uppercase;
+  margin: 24px;
+}
+
+.btn-home2:hover{
+  border: 2px solid #eeae20;
+  color: rgb(248, 250, 248);
+}
   
