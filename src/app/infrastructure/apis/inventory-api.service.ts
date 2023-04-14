@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { InventoryDTO } from 'src/app/domain/commands/inventory.dto';
+import { QuantityInventoryDTO } from 'src/app/domain/commands/quantity-inventory.dto';
 import { InventoryModel } from 'src/app/domain/model/i-inventory.model';
 import { environment } from 'src/environments/environment';
 
@@ -21,8 +22,8 @@ export class InventoryApiService {
     return this.http.get<InventoryModel[]> (this.apiServeUrl+"/inventory/find-all-inventory");
   }
 
-  public getById(id : string): Observable<InventoryModel> {
-    return this.http.get<InventoryModel> (this.apiServeUrl+"/inventory/find-by-id/"+id)
+  public getById(_id : string): Observable<InventoryModel> {
+    return this.http.post<InventoryModel> (this.apiServeUrl+"/inventory/find-by-id/",{_id})
   }
   
   public update(id: string, Inventory: InventoryModel): Observable<InventoryModel> {
@@ -35,6 +36,12 @@ export class InventoryApiService {
 
   public delete(_id : string): Observable<boolean> {
     return this.http.post<boolean> (this.apiServeUrl+"/inventory/delete-inventory/",{_id})
+  }
+
+  //**************************************************************************************************************/
+  
+  public updateQuantity(Inventory: QuantityInventoryDTO): Observable<InventoryModel> {
+    return this.http.put<InventoryModel>(this.apiServeUrl+"/inventory/update-quantity-and-level/", Inventory)
   }
 
 }

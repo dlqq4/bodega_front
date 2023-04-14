@@ -4,6 +4,7 @@ import { ViewInventoryComponent } from './view-inventory/view-inventory.componen
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from '../shared/home/home.component';
 import { AddInventoryComponent } from './add-inventory/add-inventory.component';
+import { UpdateInventoryComponent } from './update-inventory/update-inventory.component';
 
 
 const routes : Routes = [
@@ -12,6 +13,7 @@ const routes : Routes = [
     children: [
       {path: 'app-view-inventory', component : ViewInventoryComponent},
       {path: 'app-add-inventory', component : AddInventoryComponent},
+      {path: 'app-update-inventory/:id', component : UpdateInventoryComponent},
       {path: '**', component : HomeComponent}
     ]
     

@@ -5,13 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { InventoryRoutingModule } from './inventory-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AddInventoryComponent } from './add-inventory/add-inventory.component';
+import { UpdateInventoryComponent } from './update-inventory/update-inventory.component';
 
 
 
 @NgModule({
   declarations: [
     ViewInventoryComponent,
-    AddInventoryComponent
+    AddInventoryComponent,
+    UpdateInventoryComponent
   ],
   imports: [
     CommonModule,

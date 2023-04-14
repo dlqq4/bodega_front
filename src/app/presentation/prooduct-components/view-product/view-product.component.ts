@@ -33,8 +33,6 @@ export class ViewProductComponent implements OnInit {
       error: (error:HttpErrorResponse)=> {alert(error.message)}
       })
   }
-
-  
-
+ 
 
 }
