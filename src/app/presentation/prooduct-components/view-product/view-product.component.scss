@@ -1,3 +1,19 @@
+
+  .center {
+
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    padding-left: 100px;
+    padding-right: 4px;
+    
+    
+  }
+
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -34,3 +50,6 @@
     margin: 0.5rem 0;
   }
   
+
+ 
+

@@ -28,6 +28,7 @@ export class ViewInventoryComponent implements OnInit {
     this.getAllInventory();
   }
   */
+  
 
   public getAllInventory(): void {
     this.getInventoryUseCase.getAllInventory().subscribe({

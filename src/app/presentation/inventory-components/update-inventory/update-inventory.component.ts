@@ -40,8 +40,7 @@ export class UpdateInventoryComponent implements OnInit {
   obtenerInventory(): void {
     this.getInventoryUseCase.getInventoryById(this.id).subscribe({
       next: (response: InventoryModel ) =>  {
-        this.quantityInventoryForm.patchValue(response)
-      },
+        this.quantityInventoryForm.patchValue(response)},
       error: (error:HttpErrorResponse)=> {alert(error.message)}
       })
   }
