@@ -1,79 +1,74 @@
+.center {
 
-
-
-body{
-    margin-top:20px;
-    background:#eee;
-    border-radius: 0px;
-    
-}
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 260px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 1400px;
-    color: #fe6047;
-   
-}
-
-.card-columns .card {
-    margin-bottom: 0.75rem;
-    border-radius: 0px;
-    
-    
-}
-
-.text-muted {
-    color: #6c7c9c !important;
-    
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    
-    
-}
-.mb-3 {
-    margin-bottom: 1rem ; // !important
-    
-}
-
-.input-group {
-    //position: relative;
+    margin-top: 50px;
+    margin-bottom: 80px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    padding-left: 100px;
+    padding-right: 4px;
+       
+  }
+
+  /***********************************************************/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .form-register {
+    width: 650px;
+    background: #212127;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: Helvetica;
+    color: white;
+    box-shadow: 7px 13px 37px #000000;
+  }
+  
+  .form-register h4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .controls {
     width: 100%;
-    color: #fe6047;
-    
-}
+    background: #f8faf8;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 3px solid #f8faf8;
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #212121;
+  }
 
 
-//*********************BOTON***********************
-
-.text-right{
-    
-    display: flex;
-    justify-content: right;
-    
-}
-
-.boton {
-    width: 25%;
+  
+  .form-register p {
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  
+  .form-register .boton {
+    width: 100%;
     background: #fe6047;
     border: none;
     padding: 12px;
     color: white;
-    margin: 18px 0;
+    margin: 16px 0;
     font-size: 16px;
-    
-    margin-left: 0px;
-    margin-top: 0px;
-    
   }
   
-  .boton:hover{
-    background-color: #5eaefff2;
+  .form-register .boton:hover{
+    background-color: #eeae20;
   }
 
+  

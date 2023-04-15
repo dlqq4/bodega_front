@@ -23,13 +23,14 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #4f8dcaf2 ;
+  //background-color: #4f8dcaf2 ;
+  background-color: #eeae20;
   color: white;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active{
-  background-color:  #fe6047;; /*  #ff664a   #fffa5a  #ff664a    */
+  background-color:  #fe6047; /*  #ff664a   #fffa5a  #ff664a    */
   color: rgb(248, 250, 248);
   font-weight: 500;
   /*background:linear-gradient(to right, rgb(130,226,68), #6019e0);*/

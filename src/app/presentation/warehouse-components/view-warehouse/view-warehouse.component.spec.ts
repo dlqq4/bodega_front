@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ViewWareHouseComponent } from '../../../presentation/warehouse-components/view-warehouse/view-warehouse.component';
 
-import { ViewWarehouseComponent } from './view-warehouse.component';
-
-describe('ViewWarehouseComponent', () => {
-  let component: ViewWarehouseComponent;
-  let fixture: ComponentFixture<ViewWarehouseComponent>;
+describe('ViewWareHouseComponent', () => {
+  let component: ViewWareHouseComponent;
+  let fixture: ComponentFixture<ViewWareHouseComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ViewWarehouseComponent ]
+      declarations: [ ViewWareHouseComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ViewWarehouseComponent);
+    fixture = TestBed.createComponent(ViewWareHouseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -20,4 +19,6 @@ describe('ViewWarehouseComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
 });

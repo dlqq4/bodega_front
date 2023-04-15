@@ -10,3 +10,12 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+
+/*
+*****************************************************************
+Para recargar los cambios ejecuto: npm run build
+*****************************************************************
+Para desplegar remotamente el proyecto ejecuto: firebase deploy
+*****************************************************************
+*/

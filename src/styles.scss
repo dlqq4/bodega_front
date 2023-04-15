@@ -1,9 +1,8 @@
 
 
-.body{
-    background: #ffffff;
-    position: relative;
-    padding-bottom: 4em; /*ESTA PROPIEDAD ES PARA QUE EL FOOTER COLAPSE CONTRA EL BODY*/
-    min-height:100vh; /* INDICO AL BODY QUE TIENE QUE MEDIR POR LO MENOS LO QUE MIDE EL VIEWPORT*/
-  }
-
+.body {
+  background-color: whitesmoke;
+  position: relative;
+  padding-bottom: 4em; //ESTA PROPIEDAD ES PARA QUE EL FOOTER COLAPSE CONTRA EL BODY
+  min-height: 100vh; // INDICO AL BODY QUE TIENE QUE MEDIR POR LO MENOS LO QUE MIDE EL VIEWPORT*/
+}
