@@ -4,13 +4,17 @@
   <section class="form-register" >
   <h4>Add new product</h4>
   <form [formGroup]="productForm" (ngSubmit)="createProduct()">
+    <p class="left-align">Brand</p>
     <input class="controls" type="text"  formControlName="brand" placeholder="Brand">
+    <p class="left-align">Description</p>
     <input class="controls" type="text"  formControlName="description" placeholder="Description">
+    <p class="left-align">Price</p>
     <input class="controls" type="number" formControlName="price" placeholder="Price">
-    <input class="controls" type="text"  formControlName="photo" placeholder="URL de la imagen">
+    <p class="left-align">Image</p>
+    <input class="controls" type="text"  formControlName="photo" placeholder="image URL">
     <p>We are almost done!</p>
     <button class="boton"  type="submit" >Add Product!</button>
-    <button class="boton"  [routerLink]="['/app-home']" type="submit" >Back to Home</button>
+    <button class="boton"  [routerLink]="['/app-home']" type="submit" >Back to Home ←</button>
     <p>Thank you so much!</p>
   </form>
 </section>
