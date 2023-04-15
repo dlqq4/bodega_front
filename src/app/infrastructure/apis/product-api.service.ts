@@ -28,21 +28,30 @@ export class ProductApiService {
     return this.http.get<ProductModel[]> (this.apiServeUrl+"/product/find-all-product");
   }
 
+  
   public getById(id : string): Observable<ProductModel> {
     return this.http.get<ProductModel> (this.apiServeUrl+"/product/find-by-id/"+id)
   }
   
+
   public update(id: string, product: ProductModel): Observable<ProductModel> {
       return this.http.put<ProductModel>(this.apiServeUrl+"/product/update-product/"+id, product)
   }
-
+  
   public create(product : ProductModel ): Observable<ProductModel> {
     return this.http.post<ProductModel>(this.apiServeUrl +"/product/create-product", product);
   }
 
+  /*
   public delete(id : string): Observable<boolean> {
     return this.http.delete<boolean> (this.apiServeUrl+"/product/delete-product/"+id)
   }
+  */
 
+  public delete(id: string): Observable<boolean>{
+    let direction = this.apiServeUrl+ "/product/delete-product/";
+    const body = { body: { _id: id } };
+    return this.http.delete<boolean> (direction, body);
+  }
 
 }

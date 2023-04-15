@@ -32,8 +32,16 @@ export class WareHouseApiService {
     return this.http.post<WareHouseModel>(this.apiServeUrl +"/warehouse/create-wareHouse", WareHouse);
   }
 
+  /*
   public delete(id : string): Observable<boolean> {
     return this.http.delete<boolean> (this.apiServeUrl+"/warehouse/delete-wareHouse/"+id)
+  }
+  */
+
+  public delete(id: string): Observable<boolean>{
+    let direction = this.apiServeUrl+ "/warehouse/delete-wareHouse/";
+    const body = { body: { _id: id } };
+    return this.http.delete<boolean> (direction, body);
   }
 
 }
