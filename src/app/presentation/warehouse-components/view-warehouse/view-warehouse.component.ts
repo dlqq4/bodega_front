@@ -11,6 +11,12 @@ import { GetWareHouseUseCase } from 'src/app/infrastructure/usecase/get-warehous
 export class ViewWareHouseComponent implements OnInit {
 
   warehouses : WareHouseModel[] = [];
+  
+  imageUrls = [
+    'https://i.pinimg.com/564x/34/4a/86/344a86b35becc8d1e71c54c4c663d028.jpg',
+    'https://i.pinimg.com/564x/e3/90/87/e39087da3293ebd3e5adb968bc34106d.jpg',
+    'https://i.pinimg.com/564x/56/5f/ba/565fba0f9bce91a26a0e49d11d4d87c2.jpg'
+  ];
 
   constructor(private readonly getWareHouseUseCase : GetWareHouseUseCase) { }
 
