@@ -45,32 +45,6 @@ export class AddProductComponent implements OnInit {
 
   }
 
-  /*
-  public createProduct(): void {
-
-    if (this.productForm.controls.brand.value
-      && this.productForm.controls.description.value
-      && this.productForm.controls.price.value
-      && this.productForm.controls.photo.value
-    ) {
-      let producto = {
-        brand: this.productForm.controls.brand.value,
-        description: this.productForm.controls.description.value,
-        price: + this.productForm.controls.price.value, //saque un + antes del this
-        photo: this.productForm.controls.photo.value,
-      }
-
-      this.createProductUseCase.createProduct(producto).subscribe({
-        next: (response: ProductModel) => {
-          producto = response;
-          console.log(producto);
-          complete: ()=> alert("¡El producto se agrego correctamente!")
-        },
-        error: (error: HttpErrorResponse) => { alert(error.message) }
-      })
-    }
-
-  }
-  */
 
 }
+

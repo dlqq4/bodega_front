@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { InventoryDTO } from 'src/app/domain/commands/inventory.dto';
-import { InventoryModel } from 'src/app/domain/model/i-inventory.model';
 import { ProductModel } from 'src/app/domain/model/i-product.model';
 import { WareHouseModel } from 'src/app/domain/model/i-warehouse.model';
 import { CreateInventoryUseCase } from 'src/app/infrastructure/usecase/create-inventory.use-case';
